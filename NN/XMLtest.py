@@ -3,7 +3,7 @@ import os
 from nifti import *
 
 #neptune is a local user account
-os.chdir("/ADNI_data/ADNI")
+os.chdir("/DeepLearningAD/ADNI")
 all = os.listdir(os.getcwd())
 xmls =[]
 passed = 0
@@ -27,7 +27,7 @@ print fail
 
 #Checks to see what the max size of each NiFTi image is
 def maxsizeofNIFTI(xmls):
-    os.chdir("/ADNI_data/ADNI")
+    os.chdir("/DeepLearningAD/ADNI")
     all = os.listdir(os.getcwd())
     maxsize = [0,0,0]
     for file in xmls:
