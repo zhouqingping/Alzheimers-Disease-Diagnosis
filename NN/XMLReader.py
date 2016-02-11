@@ -97,4 +97,4 @@ class XMLReader:
                 for x in parsed:
                     if x == imageid:
                         return path + "/" + i
-        return path + "/" + scan[0]
+        return origin + path + "/" + scan[0]
